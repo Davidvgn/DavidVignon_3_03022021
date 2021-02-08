@@ -1,0 +1,40 @@
+.header__container{
+    height: 50px;
+    background:  $colour-search;
+    &__input{
+        padding-left: 17px;
+    }
+}
+input{
+    background: $colour-search;
+    border: $colour-search;
+}
+
+.pres, .lab{
+    background: $colour-section;
+}
+
+.footer{
+    color:#ffff;
+    background: $colour-footer;
+}
+.pres{
+    height: 288px;
+    text-align: center;
+    &__heading{
+        padding-top: 44px;
+        padding-bottom: 20px;
+    }
+    &__p{
+        padding-bottom: 53px;
+    }
+    &__btn{
+        color:#ffff;
+        background: linear-gradient($colour-secondary, $colour-primary);
+        border-radius: 30px;
+        padding: 18px 23px 18px 23px;
+        &:hover{
+            background: linear-gradient(lighten($colour-secondary,5%), lighten($colour-primary,5%));
+        }
+    }
+}
