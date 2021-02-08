@@ -86,9 +86,27 @@ input{
     position: relative;
     left: 10px;
 }
-.fonct__bullet__btn{
-    &:hover{
 
+.lab{
+    padding-bottom: 64px;
+    &__heading{
+        padding-top:59px;
+        padding-left: 21px;
+        padding-bottom: 28px;
     }
+    &__block{
+        width: 335px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 20px 20px;
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.35);
+    }
+    &__block__img{
+        display: block;
+        border-radius: 20px 20px 0px 0px;
+    }
+}
 
+h3{
+    padding-bottom:3px;
 }
