@@ -10,11 +10,15 @@
     &__input{
         padding-left: 17px;
     }
+    &__icone{
+        padding-left: 30px;
+    }
 }
 input{
     background: $colour-search;
     border: $colour-search;
     outline: none;
+    font-size: 1rem;
 }
 
 .pres, .lab{
@@ -31,9 +35,11 @@ input{
     &__heading{
         padding-top: 44px;
         padding-bottom: 20px;
+        font-size: 1.7rem;
     }
     &__p{
         padding-bottom: 53px;
+        font-size: 1.1rem;
     }
     &__btn{
         color:#ffff;
