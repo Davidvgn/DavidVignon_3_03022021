@@ -76,7 +76,7 @@ input{
 }
 .nber{
     position: relative;
-    right: 13px;
+    right: 10px;
     padding: 4px 9px 4px 9px;
     border-radius: 300px;
     background: $colour-primary;
@@ -101,11 +101,23 @@ input{
         padding-bottom: 28px;
     }
     &__block{
+        position: relative;
         width: 335px;
         margin-right: auto;
         margin-left: auto;
         border-radius: 20px 20px;
         box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.35);
+    }
+    &__block__new{
+        position: absolute;
+        right: 12px;
+        top: 15px;
+        background: $colour-tertiary;
+        height: 30px;
+        line-height: 30px;
+        width:80px;
+        text-align: center;
+        color: $colour-new;
     }
     &__block__img{
         display: block;
