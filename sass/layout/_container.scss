@@ -1,14 +1,15 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-}
-
 .header__container{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50px;
+    background: $colour-search;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
+
 }
+
 .lab__container{
+    @include global-container;
     height: 77px;
     background: #ffff;
     margin-bottom: 18px;
@@ -21,10 +22,18 @@
         padding-right: 25px;
         padding-top: 25px;
     }
-    &__last{
-        height: 77px;
-        background: #ffff;
-        border-radius: 0px 0px 20px 20px;
+}
 
-    }
+.menu__container{
+    @include global-container;
+}
+
+.banniere__container{
+    @include global-container;
+    position: absolute;
+    bottom: 0;
+    height:70px;
+    width:100%;
+    background: $colour-section;
+    border-radius: $heading_border_radius ;
 }

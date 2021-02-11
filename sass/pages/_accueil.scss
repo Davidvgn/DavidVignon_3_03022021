@@ -1,0 +1,142 @@
+.header__logo{
+    height: 65px;
+    line-height: 65px;
+}
+input{
+    background: $colour-search;
+    border: $colour-search;
+    outline: none;
+    font-size: 1rem;
+}
+
+.pres, .lab{
+    background: $colour-section;
+}
+
+.pres{
+    height: 288px;
+    text-align: center;
+    &__heading{
+        padding-top: 44px;
+        padding-bottom: 20px;
+        font-size: 1.7rem;
+    }
+    &__p{
+        padding-bottom: 53px;
+        font-size: 1.1rem;
+    }
+    &__btn{
+        color:#ffff;
+        background: linear-gradient($colour-secondary, $colour-primary);
+        border-radius: 30px;
+        padding: 18px 23px 18px 23px;
+        &:hover{
+            background: linear-gradient(lighten($colour-secondary,5%), lighten($colour-primary,5%));
+        }
+    }
+}
+.fonct{
+    background: #ffff;
+    position: relative;
+    &__heading{
+        padding-top:53px;
+        padding-left: 21px;
+    }
+    &__bullet > li{
+        height:72px;
+        max-width: 325px;
+        line-height: 72px;
+        margin: 23px auto 23px auto;
+        border-radius: 30px;
+        background: $colour-section;
+        box-shadow: 0px 6px 2px -2px $colour-search;
+        &:hover{
+            background-color: $colour-hover;
+            .fonct__icone{
+                color:$colour-primary;
+            }
+        }
+    }
+}
+.fonct__icone{
+    position: absolute;
+    top: 2px;
+
+}
+.nber{
+    position: relative;
+    right: 10px;
+
+    padding: 4px 9px 4px 9px;
+    border-radius: 300px;
+    background: $colour-primary;
+}
+.text{
+    padding-left: 35px;
+}
+.text__bis{
+    padding-left: 30px;
+}
+.fonct__icone{
+    color:grey;
+    position: relative;
+    left: 10px;
+}
+
+.lab{
+    padding-bottom: 64px;
+    &__heading{
+        padding-top:59px;
+        padding-left: 21px;
+        padding-bottom: 28px;
+    }
+    &__block{
+        position: relative;
+        width: 335px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 20px 20px;
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.35);
+    }
+    &__block__new{
+        position: absolute;
+        right: 12px;
+        top: 15px;
+        background: $colour-tertiary;
+        height: 30px;
+        line-height: 30px;
+        width:80px;
+        text-align: center;
+        color: $colour-new;
+    }
+    &__block__img{
+        display: block;
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+
+h3{
+    padding-bottom:3px;
+}
+h3 + p{
+    font-size: 1.1rem;
+}
+
+.lab__container__elt2{
+    position: relative;
+    .icon-default{
+        position: absolute;
+    }
+    .icon-hover{
+        color: white;
+    }
+    &:hover{
+        .icon-hover{
+            transition:  1s;
+            color: $colour-primary;
+        }
+        .icon-default{
+            opacity:0;
+        }
+    }
+}

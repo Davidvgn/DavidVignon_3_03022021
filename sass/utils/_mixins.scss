@@ -1,0 +1,8 @@
+@mixin link_shadow{
+    box-shadow: 1px 1px 12px black ;
+}
+
+@mixin global-container{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,27 @@
+.footer{
+    padding-left: 25px;
+    color:#ffff;
+    background: $colour-footer;
+    &__heading{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-size: 1.2rem;
+    }
+    &__bullet > li{
+        padding-bottom: 7px;
+    }
+    &__bullet__icon{
+        padding-right: 12px;
+    }
+    &__bullet__icon2{
+        padding-right: 5px;
+    }
+}
+
+footer a{
+    color: white;
+}
+
+#footer__bullet__lst{
+    padding-bottom: 37px;
+}
