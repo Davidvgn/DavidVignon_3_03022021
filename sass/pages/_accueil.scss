@@ -16,22 +16,43 @@ input{
 .pres{
     height: 288px;
     text-align: center;
+    position: relative;
     &__heading{
         padding-top: 44px;
         padding-bottom: 20px;
         font-size: 1.7rem;
     }
     &__p{
-        padding-bottom: 53px;
-        font-size: 1.1rem;
+        margin-bottom: 31px;
     }
     &__btn{
         color:#ffff;
         background: linear-gradient($colour-secondary, $colour-primary);
         border-radius: 30px;
-        padding: 18px 23px 18px 23px;
+        padding: 15px 23px 15px 23px;
+        z-index: 1;
+        position: absolute;
+        right: 80px;
+        bottom: 40px;
         &:hover{
-            background: linear-gradient(lighten($colour-secondary,5%), lighten($colour-primary,5%));
+            &::after {
+                opacity: 1;
+            }
+        }
+        &::after {
+            content: "";
+            border-radius: 30px;
+            position: absolute;
+            background: linear-gradient(lighten($colour-secondary, 5), lighten($colour-primary, 5));
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+
+
         }
     }
 }

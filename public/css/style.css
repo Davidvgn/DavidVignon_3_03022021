@@ -142,6 +142,7 @@ input {
 .pres {
   height: 288px;
   text-align: center;
+  position: relative;
 }
 .pres__heading {
   padding-top: 44px;
@@ -149,17 +150,33 @@ input {
   font-size: 1.7rem;
 }
 .pres__p {
-  padding-bottom: 53px;
-  font-size: 1.1rem;
+  margin-bottom: 31px;
 }
 .pres__btn {
   color: #ffff;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
-  padding: 18px 23px 18px 23px;
+  padding: 15px 23px 15px 23px;
+  z-index: 1;
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
 }
-.pres__btn:hover {
+.pres__btn:hover::after {
+  opacity: 1;
+}
+.pres__btn::after {
+  content: "";
+  border-radius: 30px;
+  position: absolute;
   background: linear-gradient(#ff93e1, #a16be0);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 .fonct {
