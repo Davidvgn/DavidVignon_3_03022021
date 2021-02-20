@@ -35,6 +35,14 @@ body {
 }
 
 .header__logo__menu {
+  font-family: "Shrikhand", cursive;
+}
+
+.banniere {
+  font-family: "Shrikhand", cursive;
+}
+
+.header__logo__menu {
   height: 63px;
   margin-left: 75px;
   margin-top: 10px;
@@ -116,11 +124,23 @@ footer a {
   display: flex;
   justify-content: space-between;
   position: absolute;
+  align-items: center;
   bottom: 0;
   height: 70px;
   width: 100%;
   background: #f6f6f6;
   border-radius: 30px 30px 0px 0px;
+}
+.banniere__container__heading {
+  padding-left: 17px;
+}
+.banniere__container__heart {
+  padding-right: 37px;
+}
+
+.header__menu__container {
+  display: flex;
+  height: 63px;
 }
 
 .header__logo {
@@ -270,23 +290,68 @@ h3 + p {
   font-size: 1.1rem;
 }
 
+.color1 {
+  stop-color: #9356DC;
+}
+
+.color2 {
+  stop-color: #FF79DA;
+}
+
 .lab__container__elt2 {
   position: relative;
 }
-.lab__container__elt2 .icon-default {
+.lab__container__elt2__svg1 {
   position: absolute;
+  right: 25px;
+  fill: white;
+  stroke: black;
 }
-.lab__container__elt2 .icon-hover {
-  color: white;
-}
-.lab__container__elt2:hover .icon-hover {
-  transition: 1s;
-  color: #9356DC;
-}
-.lab__container__elt2:hover .icon-default {
+.lab__container__elt2__svg1:hover {
   opacity: 0;
 }
+.lab__container__elt2__svg {
+  position: absolute;
+  right: 25px;
+  fill: url(#gradient);
+  stroke: url(#gradient);
+  transform-origin: bottom;
+  transform: scaleY(1);
+  opacity: 0;
+  transition: transform 1000ms;
+}
+.lab__container__elt2__svg:hover {
+  opacity: 1;
+  transform: scaleY(0);
+}
 
+/*.white_square{
+        height:15px;
+        width:15px;
+        position: absolute;
+        right: 30px;
+        bottom:35px;
+        background-color:blue;
+        opacity: 1;
+
+        &:hover{
+            height: 30px;
+            width:30px;
+            opacity:1;
+            animation: test 400ms forwards;
+            transform-origin: top;
+
+        }
+    }
+@keyframes test{
+    from{
+        transform: scaleY(1);
+
+    }
+    to{
+        transform: scaleY(0);
+
+    }*/
 .banniere {
   position: relative;
   height: 300px;
