@@ -180,7 +180,7 @@ h3 + p{
         }
     }
 
-body{
+.for_spinner{
 background-color: #ffff;
 animation: change_color 3500ms;
 }
@@ -192,7 +192,7 @@ animation: change_color 3500ms;
         background: #ffff;
     }
 }
-    #bloc_page{
+    .bloc_page--spinner{
         transform: scale(1);
         animation: show 3500ms;
         transform-origin: top;

@@ -4,7 +4,7 @@
   margin: 0px;
 }
 
-#bloc_page {
+.bloc_page {
   max-width: 374px;
   margin: auto;
 }
@@ -427,7 +427,7 @@ h3 + p {
   transform: scaleY(0);
 }
 
-body {
+.for_spinner {
   background-color: #ffff;
   animation: change_color 3500ms;
 }
@@ -440,7 +440,7 @@ body {
     background: #ffff;
   }
 }
-#bloc_page {
+.bloc_page--spinner {
   transform: scale(1);
   animation: show 3500ms;
   transform-origin: top;
