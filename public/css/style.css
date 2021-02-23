@@ -427,33 +427,89 @@ h3 + p {
   transform: scaleY(0);
 }
 
-/*.white_square{
-        height:15px;
-        width:15px;
-        position: absolute;
-        right: 30px;
-        bottom:35px;
-        background-color:blue;
-        opacity: 1;
+body {
+  background-color: #ffff;
+  animation: change_color 3500ms;
+}
 
-        &:hover{
-            height: 30px;
-            width:30px;
-            opacity:1;
-            animation: test 400ms forwards;
-            transform-origin: top;
+@keyframes change_color {
+  0%, 90% {
+    background: linear-gradient(#c9abee, #ffdff6);
+  }
+  100% {
+    background: #ffff;
+  }
+}
+#bloc_page {
+  transform: scale(1);
+  animation: show 3500ms;
+  transform-origin: top;
+  position: relative;
+}
 
-        }
-    }
-@keyframes test{
-    from{
-        transform: scaleY(1);
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 0em;
+  height: 0em;
+  animation-fill-mode: both;
+  animation: loading 1.8s 5 ease-in-out, volume 3500ms;
+  transform: scale(0);
+}
 
-    }
-    to{
-        transform: scaleY(0);
+.loader {
+  color: #ae80e5;
+  position: absolute;
+  top: 35%;
+  left: 47%;
+  animation-delay: -0.16s;
+}
 
-    }*/
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+.loader:before {
+  left: -3.5em;
+  animation-delay: -0.32s;
+}
+
+.loader:after {
+  left: 3.5em;
+}
+
+@keyframes loading {
+  0%, 80%, 100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes volume {
+  0%, 90% {
+    width: 2.5em;
+    height: 2.5em;
+    transform: scale(1);
+  }
+  100% {
+    width: 0em;
+    height: 0em;
+    transform: scale(0);
+  }
+}
+@keyframes show {
+  0%, 90% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .banniere {
   position: relative;
   height: 300px;
