@@ -8,21 +8,6 @@
 
 }
 
-.lab__container{
-    @include global-container;
-    height: 77px;
-    background: #ffff;
-    margin-bottom: 18px;
-    border-radius: 0px 0px 20px 20px;
-    &__elt1{
-        padding-left: 13px;
-        padding-top: 18px;
-    }
-    &__elt2{
-        padding-right: 25px;
-        padding-top: 25px;
-    }
-}
 
 .menu__container{
     @include global-container;

@@ -115,7 +115,7 @@ input{
     }
     &__block{
         position: relative;
-       max-width: 335px;
+        max-width: 335px;
         margin-right: auto;
         margin-left: auto;
         border-radius: 20px 20px;
@@ -138,6 +138,41 @@ input{
         
     }
 }
+.color1{ stop-color: $colour-primary;}
+.color2{ stop-color: $colour-secondary;}
+.lab__container{
+    position: relative;
+    height: 77px;
+    background: #ffff;
+    margin-bottom: 18px;
+    border-radius: 0px 0px 20px 20px;
+    &__elt1{
+        padding-left: 13px;
+        padding-top: 18px;
+    }
+    &__elt2__svg__empty{
+        position: absolute;
+        right: 25px;
+        top: 22px;
+        fill: #ffff;
+        stroke: #000000;
+        &:hover{
+            opacity: 0;
+        }
+    }
+    &__elt2__svg{
+        position: absolute;
+        fill: url(#gradient);
+        stroke: url(#gradient);
+        right: 25px;
+        top: 22px;
+        opacity: 0;
+        &:hover{
+        opacity: 1;
+        transition: opacity 700ms;
+        }
+    }
+}
 
 h3{
     padding-bottom:3px;
@@ -146,39 +181,8 @@ h3 + p{
     font-size: 1.1rem;
 }
 
-.color1{ stop-color: $colour-primary;}
-.color2{ stop-color: $colour-secondary;}
-
-.lab__container__elt2{
-    position: relative;
-        &__svg1{
-        position: absolute;
-        right: 25px;
-        fill: white;
-        stroke: black;
-            &:hover{
-                opacity: 0;
-            }
-        }      
-       &__svg{
-            position: absolute;
-            right: 25px;
-            fill: url(#gradient);
-            stroke: url(#gradient);
-            transform-origin: bottom;
-            transform: scaleY(1);
-            opacity:0;
-            transition: transform 1000ms;
 
 
-            &:hover{
-                opacity:1;
-                transform: scaleY(0);
-
-
-            } 
-        }
-    }
 
 .for_spinner{
 background-color: #ffff;

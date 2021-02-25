@@ -27,7 +27,7 @@ img {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 body {
@@ -104,23 +104,6 @@ footer a {
   height: 50px;
   background: #eaeaea;
   box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
-}
-
-.lab__container {
-  display: flex;
-  justify-content: space-between;
-  height: 77px;
-  background: #ffff;
-  margin-bottom: 18px;
-  border-radius: 0px 0px 20px 20px;
-}
-.lab__container__elt1 {
-  padding-left: 13px;
-  padding-top: 18px;
-}
-.lab__container__elt2 {
-  padding-right: 25px;
-  padding-top: 25px;
 }
 
 .menu__container {
@@ -241,6 +224,45 @@ h4 {
 
 .footer__heading--menu {
   margin-top: 183px;
+}
+
+.bloc_page--menus {
+  animation: appear linear 400ms;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes trans {
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.menu__title--entree {
+  animation: appear linear 50ms both, trans linear 150ms;
+  animation-delay: 200ms;
+  opacity: 0;
+  transform: translateY(0);
+}
+
+.menu__title--plats {
+  animation: appear linear 50ms both, trans linear 250ms;
+  animation-delay: 400ms;
+  opacity: 0;
+}
+
+.menu__title--dess {
+  animation: appear linear 50ms both, trans linear 350ms;
+  animation-delay: 600ms;
+  opacity: 0;
 }
 
 .header__logo {
@@ -384,14 +406,6 @@ input {
   border-radius: 20px 20px 0px 0px;
 }
 
-h3 {
-  padding-bottom: 3px;
-}
-
-h3 + p {
-  font-size: 1.1rem;
-}
-
 .color1 {
   stop-color: #9356DC;
 }
@@ -400,31 +414,46 @@ h3 + p {
   stop-color: #FF79DA;
 }
 
-.lab__container__elt2 {
+.lab__container {
   position: relative;
+  height: 77px;
+  background: #ffff;
+  margin-bottom: 18px;
+  border-radius: 0px 0px 20px 20px;
 }
-.lab__container__elt2__svg1 {
+.lab__container__elt1 {
+  padding-left: 13px;
+  padding-top: 18px;
+}
+.lab__container__elt2__svg__empty {
   position: absolute;
   right: 25px;
-  fill: white;
-  stroke: black;
+  top: 22px;
+  fill: #ffff;
+  stroke: #000000;
 }
-.lab__container__elt2__svg1:hover {
+.lab__container__elt2__svg__empty:hover {
   opacity: 0;
 }
 .lab__container__elt2__svg {
   position: absolute;
-  right: 25px;
   fill: url(#gradient);
   stroke: url(#gradient);
-  transform-origin: bottom;
-  transform: scaleY(1);
+  right: 25px;
+  top: 22px;
   opacity: 0;
-  transition: transform 1000ms;
 }
 .lab__container__elt2__svg:hover {
   opacity: 1;
-  transform: scaleY(0);
+  transition: opacity 700ms;
+}
+
+h3 {
+  padding-bottom: 3px;
+}
+
+h3 + p {
+  font-size: 1.1rem;
 }
 
 .for_spinner {
