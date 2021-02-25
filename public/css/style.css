@@ -212,6 +212,7 @@ h4 {
   content: "";
   border-radius: 30px;
   position: absolute;
+  box-shadow: 1px 1px 7px #656464;
   background: linear-gradient(#ff93e1, #a16be0);
   top: 0;
   bottom: 0;
@@ -313,6 +314,7 @@ input {
   content: "";
   border-radius: 30px;
   position: absolute;
+  box-shadow: 1px 1px 7px #656464;
   background: linear-gradient(#ff93e1, #a16be0);
   top: 0;
   bottom: 0;

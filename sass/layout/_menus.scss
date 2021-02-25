@@ -82,6 +82,7 @@ h4{
             content: "";
             border-radius: 30px;
             position: absolute;
+            box-shadow: $btn-shadow-darkvalues;
             background: linear-gradient(lighten($colour-secondary, 5), lighten($colour-primary, 5));
             top: 0;
             bottom: 0;
