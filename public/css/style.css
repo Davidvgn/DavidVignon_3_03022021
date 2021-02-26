@@ -27,7 +27,7 @@ img {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 body {
@@ -157,12 +157,43 @@ footer a {
 }
 .menu__food {
   background: white;
-  width: 338px;
+  max-width: 338px;
+  max-height: 50px;
   margin: auto;
+  margin-bottom: 15px;
   padding-top: 15px;
   padding-left: 12px;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0px 6px 12px -2px #d7d0d0;
+}
+.menu__food:hover {
+  cursor: pointer;
+  animation: test linear;
+}
+.menu__food:hover .check {
+  display: block;
+  cursor: pointer;
+  animation: test 800ms forwards;
+}
+.menu__food--big {
+  background: white;
+  max-width: 338px;
+  max-height: 70px;
+  margin: auto;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 12px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 6px 12px -2px #d7d0d0;
+}
+.menu__food--big:hover {
+  cursor: pointer;
+  animation: test linear;
+}
+.menu__food--big:hover .check--big {
+  display: block;
+  cursor: pointer;
+  animation: test 800ms forwards;
 }
 .menu--ench {
   height: 1180px;
@@ -185,7 +216,7 @@ h4 {
 }
 
 .menu__container p:nth-child(1) {
-  width: 280px;
+  width: 270px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -266,6 +297,47 @@ h4 {
   opacity: 0;
 }
 
+.check {
+  position: relative;
+  display: none;
+  width: 60px;
+  background: #99E2D0;
+  transform-origin: right;
+  transform: scaleX(0);
+  top: -38px;
+  border-radius: 0px 20px 20px 0px;
+  height: 67px;
+}
+
+.check--big {
+  position: relative;
+  display: none;
+  width: 60px;
+  height: 86px;
+  top: -57px;
+  background: #99E2D0;
+  transform-origin: right;
+  transform: scaleX(0);
+  border-radius: 0px 20px 20px 0px;
+}
+
+.check__icon {
+  position: absolute;
+  top: 39%;
+  display: inline-block;
+  width: 100%;
+  color: #ffff;
+  text-align: center;
+}
+
+@keyframes test {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
 .header__logo {
   height: 65px;
   line-height: 65px;
