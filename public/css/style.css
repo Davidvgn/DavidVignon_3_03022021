@@ -429,6 +429,7 @@ input {
 }
 .fonct__bullet > li:hover {
   background-color: #f5edff;
+  box-shadow: 1px 1px 7px #7b7a7a;
 }
 .fonct__bullet > li:hover .fonct__icone {
   color: #9356DC;
