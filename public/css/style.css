@@ -237,7 +237,8 @@ h4 {
   z-index: 1;
   position: absolute;
   top: 30px;
-  left: 23%;
+  left: 50%;
+  transform: translate(-50%);
   box-shadow: 1px 1px 7px #767575;
 }
 .btn__order:hover::after {
@@ -389,7 +390,8 @@ input {
   padding: 15px 23px 15px 23px;
   z-index: 1;
   position: absolute;
-  left: 20%;
+  left: 50%;
+  transform: translate(-50%);
   top: 67%;
 }
 .pres__btn:hover::after {
@@ -446,6 +448,11 @@ input {
   padding: 4px 9px 4px 9px;
   border-radius: 300px;
   background: #9356DC;
+}
+@media (max-width: 344px) {
+  .nber {
+    right: 0px;
+  }
 }
 
 .text {
