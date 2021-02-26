@@ -168,12 +168,14 @@ footer a {
 }
 .menu__food:hover {
   cursor: pointer;
-  animation: test linear;
 }
 .menu__food:hover .check {
   display: block;
   cursor: pointer;
   animation: test 800ms forwards;
+}
+.menu__food:hover .check__icon {
+  animation: rotation 400ms forwards ease-in-out;
 }
 .menu__food--big {
   background: white;
@@ -188,12 +190,14 @@ footer a {
 }
 .menu__food--big:hover {
   cursor: pointer;
-  animation: test linear;
 }
 .menu__food--big:hover .check--big {
   display: block;
   cursor: pointer;
   animation: test 800ms forwards;
+}
+.menu__food--big:hover .check__icon {
+  animation: rotation 400ms forwards ease-in-out;
 }
 .menu--ench {
   height: 1180px;
@@ -328,6 +332,7 @@ h4 {
   width: 100%;
   color: #ffff;
   text-align: center;
+  transform: rotate(-180deg);
 }
 
 @keyframes test {
@@ -336,6 +341,14 @@ h4 {
   }
   to {
     transform: scaleX(1);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
 .header__logo {
