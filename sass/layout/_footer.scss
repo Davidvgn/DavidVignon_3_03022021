@@ -6,7 +6,7 @@
         padding-top: 25px;
         padding-bottom: 25px;
         font-size: 1.2rem;
-    }
+    }        
     &__bullet > li{
         padding-bottom: 7px;
     }
@@ -24,4 +24,28 @@ footer a{
 
 #footer__bullet__lst{
     padding-bottom: 37px;
+}
+
+.footer__block{
+    @media (min-width:700px) and (max-width: 989px){
+        max-width: 760px;
+        margin: auto;
+    }
+    @media (min-width:990px){
+        max-width: 900px;
+        margin: auto;
+    }
+}
+.footer__bullet{
+    @media (min-width:700px) and (max-width: 989px){
+        display: flex;
+        justify-content: space-between;
+
+     }
+     @media (min-width:990px){
+         display: flex;
+        justify-content: space-between;
+
+     }
+
 }

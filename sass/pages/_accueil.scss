@@ -24,6 +24,9 @@ input{
     }
     &__p{
         margin-bottom: 31px;
+        font-size: 1.1rem;
+        font-weight: lighter;
+        padding: 2px;
     }
     &__btn{
         color:#ffff;
@@ -62,11 +65,28 @@ input{
     }
 }
 .fonct{
+    @media (min-width:760px) and (max-width: 989px){
+        max-width: 760px;
+        margin: auto;
+    }
+    @media (min-width:990px){
+        max-width: 900px;
+        margin: auto;
+    }
+    /*@media (min-width:1280px){
+        max-width: 1200px;
+        margin: auto;
+    }*/
     background: #ffff;
     position: relative;
     &__heading{
         padding-top:53px;
         padding-left: 21px;
+    }
+    &__bullet{
+        @media (min-width:990px){
+            display: flex;
+        }
     }
     &__bullet > li{
         height:72px;
@@ -76,6 +96,15 @@ input{
         border-radius: 30px;
         background: $colour-section;
         box-shadow: $shadow-values;
+        @media (max-width: 325px){
+            width:(280px);
+        }
+        @media (min-width:900px){
+            
+            width: 280px;
+
+
+        }
         &:hover{
             background-color: $colour-hover;
             box-shadow: 1px 1px 7px #7b7a7a;
@@ -96,9 +125,7 @@ input{
     padding: 4px 9px 4px 9px;
     border-radius: 300px;
     background: $colour-primary;
-    @media (max-width: 344px){
-        right:0px;
-    }
+
 }
 .text{
     padding-left: 35px;
@@ -113,7 +140,26 @@ input{
 }
 
 .lab{
+
+    @media (min-width:700px) and (max-width: 989px){
+        max-width: 760px;
+        margin: auto;
+        border-radius: 30px;
+        margin-bottom: 70px;
+        margin-top: 70px;
+
+    }
+    @media (min-width:990px){
+        max-width: 900px;
+        margin: auto;
+        border-radius: 30px;
+        margin-bottom: 70px;
+        margin-top: 70px;
+
+    }
+
     padding-bottom: 64px;
+    margin-top: 70px;
     &__heading{
         padding-top:59px;
         padding-left: 21px;
@@ -122,6 +168,7 @@ input{
     &__block{
         position: relative;
         max-width: 335px;
+        margin-bottom: 30px;
         margin-right: auto;
         margin-left: auto;
         border-radius: 20px 20px;
@@ -150,7 +197,6 @@ input{
     position: relative;
     height: 77px;
     background: #ffff;
-    margin-bottom: 18px;
     border-radius: 0px 0px 20px 20px;
     &__elt1{
         padding-left: 13px;

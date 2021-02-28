@@ -13,9 +13,12 @@
 
     <body class="for_spinner">
 
-        <div class="loader"></div>
+        <div class="loader"></div> <!--spinner-->
 
         <div class="bloc_page bloc_page--spinner">
+
+            <!-----------HEADER---------->
+
             <header class="header">
                 <div class="header__logo">
                     <h1>
@@ -32,17 +35,20 @@
                 </div>
             </header>
 
+            <!---------SECTIONS----------> 
 
-            <section class="pres">
+                        <!--Section présentation-->
+           <section class="pres">                                   
                 <h2 class="pres__heading">
                     Réservez le menu qui <br />vous convient
                 </h2>
                 <p class="pres__p">
-                    Découvrez des restaurants d'exception, <br />sélectionnés par nos soins.
+                    Découvrez des restaurants d'exception, sélectionnés par nos soins.
                 </p>
                 <a class="pres__btn"  href="fake_link.html">Explorer nos restaurants</a>
             </section>
 
+                        <!--Section Fonctionnement-->
             <section class="fonct">
                 <h2 class="fonct__heading">
                     Fonctionnement
@@ -54,109 +60,119 @@
                 </ul>
             </section>
 
+                        <!--Section Restaurants-->
             <section class="lab">
                 <h2 class="lab__heading">
                     Restaurants
                 </h2>
-                
-                <div class="lab__block">
 
-                  
-                    <a href="menu_palette.html">
-                        <p class="lab__block__new">Nouveau</p>
-                        <img class="lab__block__img" src="./public/img/palette-gout.jpg" alt="Restaurant La palette du goût">
-                        <div class="lab__container">
-                            <div class="lab__container__elt1">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
-                            </div>
+                <div class="rest__container">   
+        
+                    <div class="rest__container__elt1"> 
+                            <div class="lab__block">                  
+                                <a href="menu_palette.html">
+                                    <p class="lab__block__new">Nouveau</p>
+                                    <img class="lab__block__img" src="./public/img/palette-gout.jpg" alt="Restaurant La palette du goût">
+                                    <div class="lab__container">
+                                        <div class="lab__container__elt1">
+                                            <h3>La palette du goût</h3>
+                                            <p>Ménilmontant</p>
+                                        </div>
 
-                            <div class="lab__container__elt2">
-                                <svg class='lab__container__elt2__svg__empty' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
-                                    <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-                                </svg>    
-                                <svg class='lab__container__elt2__svg' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
-                                    <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-                                    <defs>
-                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                            <stop class="color1" offset="0%" />
-                                            <stop class="color2" offset="75%" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>  
-                            </div>
-                        </div>
-                    </a>
-                </div> 
+                                        <div class="lab__container__elt2">
+                                            <svg class='lab__container__elt2__svg__empty' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
+                                                <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
+                                            </svg>    
+                                            <svg class='lab__container__elt2__svg' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
+                                                <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
+                                                <defs>
+                                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                        <stop class="color1" offset="0%" />
+                                                        <stop class="color2" offset="75%" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                                        
                             
-                  
-              <div class="lab__block">
-                    <a href="menu_enchantee.html">
-                        <p class="lab__block__new">Nouveau</p>
-                        <img class="lab__block__img" src="./public/img/note-enchantee.jpg" alt="Restaurant La note enchantée">
-                        <div class="lab__container">
-                            <div class="lab__container__elt1">
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
-                            </div>  
+                        <div class="lab__block">
+                                <a href="menu_enchantee.html">
+                                    <p class="lab__block__new">Nouveau</p>
+                                    <img class="lab__block__img" src="./public/img/note-enchantee.jpg" alt="Restaurant La note enchantée">
+                                    <div class="lab__container">
+                                        <div class="lab__container__elt1">
+                                            <h3>La note enchantée</h3>
+                                            <p>Charonne</p>
+                                        </div>  
 
-                            <div class="lab__container__elt2">
-                                <svg class='lab__container__elt2__svg__empty' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
-                                    <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-                                </svg>    
-                                <svg class='lab__container__elt2__svg' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
-                                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>                                   
-                                </svg>  
-                            </div>
-                        </div>
-                    </a>
-                </div> 
-           
-               <div class="lab__block">
-                    <a href="menu_française.html">
-                        <img class="lab__block__img" src="./public/img/française.jpg" alt="Restaurant À la française">
-                        <div class="lab__container">
-                            <div class="lab__container__elt1">
-                                <h3>À la française</h3>
-                                <p>Cité Rouge</p>
-                            </div>
+                                        <div class="lab__container__elt2">
+                                            <svg class='lab__container__elt2__svg__empty' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
+                                                <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
+                                            </svg>    
+                                            <svg class='lab__container__elt2__svg' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
+                                                <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>                                   
+                                            </svg>  
+                                        </div>
+                                    </div>
+                                </a>
+                        </div> 
 
-                            <div class="lab__container__elt2">
-                                <svg class='lab__container__elt2__svg__empty' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
-                                    <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-                                </svg>
-                                <svg class='lab__container__elt2__svg' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
-                                    <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
-                </div>              
+                    </div><!--fin rest__container__elt1-->
 
-                <div class="lab__block">
-                    <a href="menu_delice.html">
-                        <img class="lab__block__img" src="./public/img/delice-sens.jpg" alt="Restaurant Le délice des sens">
-                        <div class="lab__container">
-                            <div class="lab__container__elt1">
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
-                            </div>
+                        <div class="rest__container__elt2">
+                    
+                        <div class="lab__block">
+                                <a href="menu_française.html">
+                                    <img class="lab__block__img" src="./public/img/française.jpg" alt="Restaurant À la française">
+                                    <div class="lab__container">
+                                        <div class="lab__container__elt1">
+                                            <h3>À la française</h3>
+                                            <p>Cité Rouge</p>
+                                        </div>
 
-                            <div class="lab__container__elt2">
-                                <svg class='lab__container__elt2__svg__empty' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
-                                    <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-                                </svg>
-                                <svg class='lab__container__elt2__svg' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
-                                    <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-                                </svg>
+                                        <div class="lab__container__elt2">
+                                            <svg class='lab__container__elt2__svg__empty' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
+                                                <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
+                                            </svg>
+                                            <svg class='lab__container__elt2__svg' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
+                                                <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>              
+
+                            <div class="lab__block">
+                                <a href="menu_delice.html">
+                                    <img class="lab__block__img" src="./public/img/delice-sens.jpg" alt="Restaurant Le délice des sens">
+                                    <div class="lab__container">
+                                        <div class="lab__container__elt1">
+                                            <h3>Le délice des sens</h3>
+                                            <p>Folie-Méricourt</p>
+                                        </div>
+
+                                        <div class="lab__container__elt2">
+                                            <svg class='lab__container__elt2__svg__empty' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
+                                                <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
+                                            </svg>
+                                            <svg class='lab__container__elt2__svg' xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24">
+                                                <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>                   
                             </div>
-                        </div>
-                    </a>                   
-                </div>
+                        </div><!--fin rest__container__elt2-->
+
+                </div><!--fin de rest__container--> 
                 
             </section>
-
+                                                                                    <!--FOOTER-->
             <footer class="footer">
+                <div class="footer__block">
                 <h2 class="footer__heading">
                     ohmyfood
                 </h2>
@@ -166,6 +182,7 @@
                     <li><a href="fake_link.html">Mentions légales</a></li>
                     <li id="footer__bullet__lst"><a href="mailto:fauxmailohmyfoood@contact.com">Contact</a></li>
                 </ul>
+            </div>
             </footer>
 
         </div>

@@ -29,3 +29,15 @@
     height: 63px;
 
 }
+@media (min-width: 700px){
+.rest__container__elt1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.rest__container__elt2{
+    display: flex;
+    justify-content: space-around;
+}
+}
