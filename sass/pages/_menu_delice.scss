@@ -1,8 +1,26 @@
-.banniere{
-    position: relative;
-    height: 300px;
-}
 
 .banniere--delice{
-    background: url('../../public/img/rest_delice_sens.jpg') no-repeat;
-}
+    @media (max-width:375px){
+        background: url('../../public/img/rest_delice_sens.jpg') no-repeat;
+    }
+    @media (min-width:376px){
+        background: url('../../public/img/delice__587.jpg') no-repeat;
+        background-position: center;
+
+        
+
+    }
+    @media (min-width:426px){
+        background: url('../../public/img/delice_760.jpg') no-repeat;
+        background-position: center;
+        
+
+    }
+    @media (min-width:769px){
+        background: url('../../public/img/delice_high.jpg') no-repeat;
+        background-position: center;
+        
+
+    }
+
+    }

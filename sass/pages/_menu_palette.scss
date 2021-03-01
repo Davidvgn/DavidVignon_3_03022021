@@ -1,13 +1,26 @@
 
-section{
-    background: $colour-section;
-}
-.banniere{
-    position: relative;
-    height: 300px;
-}
-
 .banniere--palette{
-    background: url('../../public/img/rest_palette_gout.jpg') no-repeat;
-}
+    @media (max-width:375px){
+        background: url('../../public/img/rest_palette_gout.jpg') no-repeat;
+    }
+    @media (min-width:376px){
+        background: url('../../public/img/palette_587.jpg') no-repeat;
+        background-position: center;
 
+        
+
+    }
+    @media (min-width:426px){
+        background: url('../../public/img/palette_760.jpg') no-repeat;
+        background-position: center;
+        
+
+    }
+    @media (min-width:769px){
+        background: url('../../public/img/palette_high.jpg') no-repeat;
+        background-position: center;
+        
+
+    }
+
+    }
