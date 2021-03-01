@@ -1,6 +1,7 @@
 
+
 .banniere__container{
-    &__heading{
+        &__heading{
         padding-left: 20px;
         font-size: 1.8rem;
         @media (max-width: 374px){
@@ -11,13 +12,41 @@
     &__heart{
         padding-right: 37px;
     }
-
 }
 .banniere{
     position: relative;
     height: 300px;
     max-width: 375px;
     margin: auto;
+    &__container__svg__empty{
+        position: absolute;
+        right:5%;
+        fill: $colour-section;
+        stroke: #000000;
+        @media (min-width:545px){
+            bottom:-80%;
+            right:50%;
+        }
+        &:hover{
+            opacity: 0;
+        }
+
+    }
+    &__container__svg{
+        position: absolute;
+        fill: url(#gradient);
+        stroke: url(#gradient);
+        opacity: 0;
+        @media (min-width:545px){
+            bottom:-80%;
+            right:50%;
+        }
+        &:hover{
+        opacity: 1;
+        transition: opacity 700ms;
+        }
+    }
+
     @media (min-width:376px){
         max-width:425px;
     }
@@ -30,6 +59,7 @@
 
     }
 }
+
 .menu{
     height:1110px;
     background: $colour-section;

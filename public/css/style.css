@@ -155,18 +155,12 @@ footer a {
     border-radius: 0px;
     justify-content: center;
   }
-  .banniere__container h2 {
-    margin-right: 30px;
-  }
 }
 @media (min-width: 760px) {
   .banniere__container {
     height: 50px;
     border-radius: 0px;
     justify-content: center;
-  }
-  .banniere__container h2 {
-    margin-right: 30px;
   }
 }
 
@@ -207,6 +201,37 @@ footer a {
   height: 300px;
   max-width: 375px;
   margin: auto;
+}
+.banniere__container__svg__empty {
+  position: absolute;
+  right: 5%;
+  fill: #f6f6f6;
+  stroke: #000000;
+}
+@media (min-width: 545px) {
+  .banniere__container__svg__empty {
+    bottom: -80%;
+    right: 50%;
+  }
+}
+.banniere__container__svg__empty:hover {
+  opacity: 0;
+}
+.banniere__container__svg {
+  position: absolute;
+  fill: url(#gradient);
+  stroke: url(#gradient);
+  opacity: 0;
+}
+@media (min-width: 545px) {
+  .banniere__container__svg {
+    bottom: -80%;
+    right: 50%;
+  }
+}
+.banniere__container__svg:hover {
+  opacity: 1;
+  transition: opacity 700ms;
 }
 @media (min-width: 376px) {
   .banniere {
