@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -238,6 +237,7 @@ footer a {
 .banniere__container__svg:hover {
   opacity: 1;
   transition: opacity 700ms;
+  cursor: pointer;
 }
 @media (min-width: 376px) {
   .banniere {
@@ -320,10 +320,21 @@ footer a {
 .menu__food:hover .check {
   display: block;
   cursor: pointer;
-  animation: test 800ms forwards;
+  animation: test 800ms both;
 }
 .menu__food:hover .check__icon {
-  animation: rotation 400ms forwards ease-in-out;
+  animation: rotation 400ms both ease-in-out;
+}
+.menu__food:active {
+  cursor: pointer;
+}
+.menu__food:active .check {
+  display: block;
+  cursor: pointer;
+  animation: test 800ms both;
+}
+.menu__food:active .check__icon {
+  animation: rotation 400ms both ease-in-out;
 }
 .menu__food--big {
   background: white;
@@ -342,10 +353,21 @@ footer a {
 .menu__food--big:hover .check--big {
   display: block;
   cursor: pointer;
-  animation: test 800ms forwards;
+  animation: test 800ms both;
 }
 .menu__food--big:hover .check__icon {
-  animation: rotation 400ms forwards ease-in-out;
+  animation: rotation 400ms both ease-in-out;
+}
+.menu__food--big:active {
+  cursor: pointer;
+}
+.menu__food--big:active .check--big {
+  display: block;
+  cursor: pointer;
+  animation: test 800ms both;
+}
+.menu__food--big:active .check__icon {
+  animation: rotation 400ms both ease-in-out;
 }
 .menu--ench {
   height: 1180px;
@@ -622,6 +644,7 @@ input {
 
 .nber {
   position: relative;
+  color: #ffff;
   right: 10px;
   padding: 4px 9px 4px 9px;
   border-radius: 300px;
@@ -875,25 +898,25 @@ h3 + p {
 }
 
 @media (max-width: 375px) {
-  .banniere--française {
-    background: url("../../public/img/rest_française.jpg") no-repeat;
+  .banniere--francaise {
+    background: url("../../public/img/rest_francaise.jpg") no-repeat;
   }
 }
 @media (min-width: 376px) {
-  .banniere--française {
-    background: url("../../public/img/française_587.jpg") no-repeat;
+  .banniere--francaise {
+    background: url("../../public/img/francaise_587.jpg") no-repeat;
     background-position: center;
   }
 }
 @media (min-width: 426px) {
-  .banniere--française {
-    background: url("../../public/img/française_760.jpg") no-repeat;
+  .banniere--francaise {
+    background: url("../../public/img/francaise_760.jpg") no-repeat;
     background-position: center;
   }
 }
 @media (min-width: 769px) {
-  .banniere--française {
-    background: url("../../public/img/française_high.jpg") no-repeat;
+  .banniere--francaise {
+    background: url("../../public/img/francaise_high.jpg") no-repeat;
     background-position: center;
   }
 }

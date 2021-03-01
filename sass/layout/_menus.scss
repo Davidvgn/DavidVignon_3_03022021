@@ -44,6 +44,8 @@
         &:hover{
         opacity: 1;
         transition: opacity 700ms;
+        cursor: pointer;
+
         }
     }
 
@@ -115,16 +117,32 @@
         box-shadow: $shadow-values;
         &:hover{
             cursor:pointer;
-                .check{
-                  display:block;
-                  cursor:pointer;
-                  animation: test 800ms forwards;
-                }
-                .check__icon{
-                    animation: rotation 400ms forwards ease-in-out;
-                }
-      }
+            .check{
+                display:block;
+                cursor:pointer;
+                animation: test 800ms both;
+
+              }
+              .check__icon{
+                  animation: rotation 400ms both ease-in-out;
+
+              }
     }
+    &:active{
+        cursor:pointer;
+        .check{
+            display:block;
+            cursor:pointer;
+            animation: test 800ms both;
+
+          }
+          .check__icon{
+              animation: rotation 400ms both ease-in-out;
+
+          }
+}
+    }
+
     &__food--big{
         background: white;
         max-width: 338px;
@@ -140,12 +158,23 @@
                 .check--big{
                   display:block;
                   cursor:pointer;
-                  animation: test 800ms forwards;}
-                  .check__icon{
-                    animation: rotation 400ms forwards ease-in-out;
-                
+                  animation: test 800ms both;
                 }
-}
+                  .check__icon{
+                    animation: rotation 400ms both ease-in-out;
+                }
+        }
+        &:active{
+            cursor:pointer;
+                .check--big{
+                display:block;
+                cursor:pointer;
+                animation: test 800ms both;
+                }
+                .check__icon{
+                    animation: rotation 400ms both ease-in-out;
+                }
+        }
 }
     &--ench{
         height: 1180px;
@@ -257,12 +286,12 @@ h4{
 
 .check{
     position: relative;
-display: none;
-  width:60px;
-  background:$colour-tertiary;
-  transform-origin: right;
-  transform:scaleX(0);
-  top: -38px;
+    display: none;
+    width:60px;
+    background:$colour-tertiary;
+    transform-origin: right;
+    transform:scaleX(0);
+    top: -38px;
     border-radius: 0px 20px 20px 0px;
     height: 67px;
 }
@@ -272,10 +301,10 @@ display: none;
       width:60px;
       height:86px;
       top:-57px;
-      background:$colour-tertiary;
-      transform-origin: right;
-      transform:scaleX(0);
-        border-radius: 0px 20px 20px 0px;
+    background:$colour-tertiary;
+    transform-origin: right;
+    transform:scaleX(0);
+    border-radius: 0px 20px 20px 0px;
 }
 .check__icon{
     position: absolute;
