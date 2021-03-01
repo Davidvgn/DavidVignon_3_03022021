@@ -53,3 +53,9 @@
     justify-content: space-around;
 }
 }
+@media (max-width:355px){
+.rest__container{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+}

@@ -183,6 +183,12 @@ footer a {
     justify-content: space-around;
   }
 }
+@media (max-width: 355px) {
+  .rest__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .banniere__container__heading {
   padding-left: 20px;
   font-size: 1.8rem;
