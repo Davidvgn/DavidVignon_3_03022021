@@ -92,6 +92,7 @@ input{
         border-radius: 30px;
         background: $colour-section;
         box-shadow: $shadow-values;
+        transition: box-shadow 400ms;
         @media (max-width: 325px){
             width:(280px);
         }
