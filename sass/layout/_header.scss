@@ -1,10 +1,4 @@
-.header__logo__menu{
-    height:63px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    font-size: 1.8rem;
-}
+/* Index */
 
 .header__container{  
     &__input{
@@ -15,6 +9,20 @@
     }
 }
 
+.header__logo{
+    height: 65px;
+    line-height: 65px;
+}
+
+/*Menus*/
+
+.header__logo__menu{
+    height:63px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
 .header__arrow{
     margin-left: 23px;
     margin-top: 22px;

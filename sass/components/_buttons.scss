@@ -1,0 +1,75 @@
+/* bouton index 'explorer'*/
+
+.presentation__btn{
+    color:#ffff;
+    box-shadow: $btn-shadow-values;
+    width:180px;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    border-radius: 30px;
+    padding: 15px 23px 15px 23px;
+    z-index: 1;
+    position: absolute;  
+    left: 50%;  
+    transform: translate(-50%);  
+    top:67%;
+    &:hover{
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        border-radius: 30px;
+        position: absolute;
+        box-shadow: $btn-shadow-darkvalues;
+        background: linear-gradient(lighten($colour-secondary, 5), lighten($colour-primary, 5));
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+
+
+
+    }
+}
+
+/* bouton menus 'commander'*/
+.btn{
+    position: relative;
+    &__order{
+        color:#ffff;
+        background: linear-gradient($colour-secondary, $colour-primary);
+        border-radius: 30px;
+        padding: 15px 50px 15px 50px;
+        z-index: 1;
+        position: absolute;
+        top:30px;
+        left:50%;
+        transform: translate(-50%);
+        box-shadow: $btn-shadow-values;
+        &:hover{
+            &::after {
+                opacity: 1;
+            }
+        }
+        &::after {
+            content: "";
+            border-radius: 30px;
+            position: absolute;
+            box-shadow: $btn-shadow-darkvalues;
+            background: linear-gradient(lighten($colour-secondary, 5), lighten($colour-primary, 5));
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+
+
+        }
+    }
+}

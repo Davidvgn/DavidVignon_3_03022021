@@ -33,6 +33,7 @@ footer a{
     }
     @media (min-width:990px){
         max-width: 900px;
+        padding: 5px;
         margin: auto;
     }
 }
@@ -40,6 +41,8 @@ footer a{
     @media (min-width:700px) and (max-width: 989px){
         display: flex;
         justify-content: space-between;
+        padding-right: 25px;
+
 
      }
      @media (min-width:990px){
@@ -48,4 +51,7 @@ footer a{
 
      }
 
+}
+.footer__heading--menu{
+    margin-top: 183px;
 }

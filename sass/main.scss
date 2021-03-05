@@ -1,8 +1,15 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/keyframes";
+
+@import "./vendors/icons";
+
 
 @import "./base/base";
 @import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/animations";
 
 @import "./layout/header";
 @import "./layout/footer";

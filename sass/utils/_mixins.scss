@@ -6,3 +6,66 @@
     display: flex;
     justify-content: space-between;
 }
+
+@mixin menu_checked{
+    position: relative;
+    display: none;
+    width:60px;
+    background:$colour-tertiary;
+    transform-origin: right;
+    transform:scaleX(0);
+    border-radius: 0px 20px 20px 0px;
+}
+
+@mixin menu_responsive{
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 40px;
+
+}
+
+@mixin hover_active_animation_chosen{
+            .check{
+                display:block;
+                cursor:pointer;
+                animation: chosen 800ms both;
+              }
+              .check__icon{
+                  animation: rotation 400ms both ease-in-out;
+              }
+}
+
+@mixin hover_active_animation_chosen--big{
+    .check--big{
+      display:block;
+      cursor:pointer;
+      animation: chosen 800ms both;
+    }
+      .check__icon{
+        animation: rotation 400ms both ease-in-out;
+    }
+}
+
+@mixin tag_menu{
+    background: white;
+        max-width: 338px;
+        margin: auto;
+        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-left: 12px;
+        border-radius: 20px;  
+        box-shadow: $shadow-values;
+}
+
+@mixin heart_color{
+    fill: url(#gradient);
+    stroke: url(#gradient);
+}
+
+@mixin heart_index_position{
+    position: absolute;
+    right: 25px;
+    top: 22px;
+
+}

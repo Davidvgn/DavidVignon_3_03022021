@@ -1,6 +1,8 @@
 .banniere--enchantee{
     @media (max-width:375px){
         background: url('../../public/img/rest_note_enchantee.jpg') no-repeat;
+        background-position: center;
+
     }
     @media (min-width:376px){
         background: url('../../public/img/note_587.jpg') no-repeat;
@@ -23,3 +25,7 @@
     }
 
     }
+
+.menu--enchantee{
+    height: 1180px;
+}

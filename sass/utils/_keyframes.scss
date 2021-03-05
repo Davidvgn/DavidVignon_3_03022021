@@ -1,0 +1,71 @@
+/*Accueil*/
+
+
+@keyframes change_color{ /*couleur body*/
+  0%,90%{
+  background: linear-gradient(lighten($colour-primary, 20), lighten($colour-secondary, 20));
+  }
+  100%{
+      background: #ffff;
+  }
+}
+
+@keyframes loading { /* grossisement shadow*/
+  0%,
+  100% {
+    box-shadow: $loading-shadow -2em;
+  }
+  40% {
+    box-shadow: $loading-shadow 0;
+  }
+}
+
+@keyframes show{ /*Size bloc__page lors de l'animation de chargement*/
+  0%,90%{
+      transform: scale(0);
+  }
+  100%
+  {
+     transform: scale(1);
+  }
+}
+
+/*Menus*/
+
+@keyframes appear{ /*apparence page menus*/
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+@keyframes chosen{ /* sélection étiquette*/
+    from{
+      transform: scaleX(0);
+    }
+    to{
+  
+      transform: scaleX(1);
+    }
+  }
+
+@keyframes rotation{ /*Rotation Icone dans animation des étiquettes choisies*/
+    from{
+        transform: rotate(-180deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes trans{ /*Mouvement étiquettes au chargement*/
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+

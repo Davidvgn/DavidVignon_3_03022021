@@ -1,3 +1,5 @@
+/*Accueil*/
+
 .header__container{
     display: flex;
     justify-content: center;
@@ -8,9 +10,43 @@
 
 }
 
+.label__container{ /*Container Nom/Lieu/Icones Restaurants*/
+    position: relative;
+    height: 77px;
+    background: #ffff;
+    border-radius: 0px 0px 20px 20px;
+    &__elt1{
+        padding-left: 13px;
+        padding-top: 18px;
+    }
+    &__elt2__svg__empty{ /*Icone Coeur Blanc*/
+        position: absolute;
+        right: 25px;
+        top: 22px;        
+        fill: #ffff;
+        stroke: #000000;
+        &:hover{
+            opacity: 0;
+        }
+    }
+    &__elt2__svg{    /*Icone coeur rempli*/
+        @include heart_index_position;
+        @include heart_color;
+        opacity: 0;
+        &:hover{
+        opacity: 1;
+        transition: opacity 700ms;
+        }
+    }
+}
+
+/*Menus*/
 
 .menu__container{
     @include global-container;
+    font-weight: lighter;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .banniere__container{
@@ -35,27 +71,31 @@
     }
 }
 
-.header__menu__container{
+.header__menu__container{ /*Logo + flèche*/
     display: flex;
     height: 63px;
     max-width: 375px;
     margin: auto;
 }
+
 @media (min-width: 700px){
-.rest__container__elt1{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
+    .rest__container__elt1{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+
+    .rest__container__elt2{
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
-.rest__container__elt2{
-    display: flex;
-    justify-content: space-around;
-}
-}
 @media (max-width:355px){
-.rest__container{
-    padding-left: 10px;
-    padding-right: 10px;
+    .rest__container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
-}
+
+    
