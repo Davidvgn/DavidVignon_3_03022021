@@ -1,0 +1,31 @@
+.banniere--enchantee{
+    @media (max-width:375px){
+        background: url('../../public/img/rest_note_enchantee.jpg') no-repeat;
+        background-position: center;
+
+    }
+    @media (min-width:376px){
+        background: url('../../public/img/note_587.jpg') no-repeat;
+        background-position: center;
+
+        
+
+    }
+    @media (min-width:426px){
+        background: url('../../public/img/note_760.jpg') no-repeat;
+        background-position: center;
+        
+
+    }
+    @media (min-width:769px){
+        background: url('../../public/img/note_high.jpg') no-repeat;
+        background-position: center;
+        
+
+    }
+
+    }
+
+.menu--enchantee{
+    height: 1180px;
+}

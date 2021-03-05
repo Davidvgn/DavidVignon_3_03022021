@@ -1,0 +1,101 @@
+/*Accueil*/
+
+.header__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: $colour-search;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
+
+}
+
+.label__container{ /*Container Nom/Lieu/Icones Restaurants*/
+    position: relative;
+    height: 77px;
+    background: #ffff;
+    border-radius: 0px 0px 20px 20px;
+    &__elt1{
+        padding-left: 13px;
+        padding-top: 18px;
+    }
+    &__elt2__svg__empty{ /*Icone Coeur Blanc*/
+        position: absolute;
+        right: 25px;
+        top: 22px;        
+        fill: #ffff;
+        stroke: #000000;
+        &:hover{
+            opacity: 0;
+        }
+    }
+    &__elt2__svg{    /*Icone coeur rempli*/
+        @include heart_index_position;
+        @include heart_color;
+        opacity: 0;
+        &:hover{
+        opacity: 1;
+        transition: opacity 700ms;
+        }
+    }
+}
+
+/*Menus*/
+
+.menu__container{
+    @include global-container;
+    font-weight: lighter;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.banniere__container{
+    @include global-container;
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    height:70px;
+    width:100%;
+    background: $colour-section;
+    border-radius: $heading_border_radius ;
+    @media (min-width:545px){
+        height: 50px;
+        border-radius: 0px;;
+       justify-content: center;
+    }
+    @media (min-width:760px){
+        height: 50px;
+        border-radius: 0px;;
+        justify-content: center;
+
+    }
+}
+
+.header__menu__container{ /*Logo + flèche*/
+    display: flex;
+    height: 63px;
+    max-width: 375px;
+    margin: auto;
+}
+
+@media (min-width: 700px){
+    .rest__container__elt1{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+
+    .rest__container__elt2{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:355px){
+    .rest__container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+    

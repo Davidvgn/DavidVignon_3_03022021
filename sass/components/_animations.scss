@@ -1,0 +1,91 @@
+                    /*Animations chargement Accueil*/
+
+
+/*Page accueil*/
+
+.for_spinner{
+    background-color: #ffff;
+    animation: change_color 3500ms;
+}
+.bloc_page--spinner{
+    transform: scale(1);
+    animation: show 3500ms;
+    transform-origin: top;
+    position: relative;
+}
+
+/*Animation chargement*/
+
+.loader,
+.loader:before,
+.loader:after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    animation: loading 1800ms 2 ease-in-out;
+}
+
+.loader {
+    color: lighten($colour-primary, 10);
+    position: absolute;
+    top:35%;
+    left:47%;
+    animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    position: absolute;
+}
+
+.loader:before {
+    left: -3.5em;
+    animation-delay: -0.32s;
+}
+
+.loader:after {
+    left: 3.5em;
+}
+
+                    /*Menus*/
+
+.bloc_page--menus{ /*apparence page menus*/
+    animation: appear linear 500ms;
+}
+                    
+
+/*Etiquette validées */
+.menu__food{
+    &:hover{
+        cursor:pointer;
+
+        @include hover_active_animation_chosen;
+    }
+    &:active{
+        cursor:pointer;
+
+    @include hover_active_animation_chosen;
+    }   
+}
+
+/*Mouvement étiquettes */
+.menu__title{
+    &--entree{
+        animation: $animation_menu 150ms;
+        animation-delay: 200ms;
+        opacity: 0;
+    }
+    &--plats{
+        animation: $animation_menu 250ms;
+        animation-delay: 400ms;
+        opacity: 0;
+    
+    }
+    &--dess{
+        animation: $animation_menu 350ms;
+        animation-delay: 600ms;
+        opacity: 0;
+    }
+}
+

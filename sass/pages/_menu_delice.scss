@@ -1,0 +1,44 @@
+
+.banniere--delice{
+    @media (max-width:375px){
+        background: url('../../public/img/rest_delice_sens.jpg') no-repeat;
+        background-position: center;
+
+    }
+    @media (min-width:376px){
+        background: url('../../public/img/delice__587.jpg') no-repeat;
+        background-position: center;
+
+        
+
+    }
+    @media (min-width:426px){
+        background: url('../../public/img/delice_760.jpg') no-repeat;
+        background-position: center;
+        
+
+    }
+    @media (min-width:769px){
+        background: url('../../public/img/delice_high.jpg') no-repeat;
+        background-position: center;
+        
+
+    }
+
+    }
+.menu__food--big{
+    @include tag_menu;
+    max-height: 70px;;
+        &:hover{
+            @include hover_active_animation_chosen--big;
+        }
+        &:active{
+            @include hover_active_animation_chosen--big;
+        }
+
+}
+.check--big{
+    @include menu_checked;
+      height:86px;
+      top:-57px;
+        }

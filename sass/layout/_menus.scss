@@ -1,0 +1,109 @@
+.menu{
+    height:$menu-section-size;
+}
+.banniere{
+    position: relative;
+    height: 300px;
+    max-width: 375px;
+    margin: auto;
+    &__container__svg__empty{
+        position: absolute;
+        right:5%;
+        fill: $colour-section;
+        stroke: #000000;
+        @media (min-width:545px){
+            bottom:-80%;
+            right:50%;
+        }
+        &:hover{
+            opacity: 0;
+        }
+    }
+    &__container__heading{
+        padding-left: 20px;
+        font-size: 1.8rem;
+            @media (max-width: 374px){
+                font-size:1.5rem;  
+            }
+    }
+    &__container__heart{
+        padding-right: 37px;
+    }
+    &__container__svg{
+        position: absolute;
+        right:5%;
+        opacity: 0;
+        @include heart_color;
+        @media (min-width:545px){
+            bottom:-80%;
+            right:50%;
+        }
+        &:hover{
+        opacity: 1;
+        transition: opacity 700ms;
+        cursor: pointer;
+        }
+    }
+    @media (min-width:376px){
+        max-width:425px;
+    }
+    @media (min-width:426px){
+        max-width:768px;
+    }
+    @media (min-width:769px){
+        max-width:1200px;
+        height: 380px;
+    }
+}
+
+.menu{
+    background: $colour-section;
+        @media (min-width:545px) and (max-width: 759px){
+            @include menu_responsive;
+        }
+        @media (min-width:760px) and (max-width: 989px){
+            max-width: 560px;
+            @include menu_responsive;
+
+        }
+        @media (min-width:990px){
+            max-width: 800px;
+        @include menu_responsive;
+        }
+    &__title{
+        font-weight: lighter;
+        font-size: 0.9rem;
+        margin-left: 20px;
+        padding-top: 15px;
+    }
+    &__container p:nth-child(1){
+        width: 270px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__container__price{
+        font-weight: normal;
+        padding-right: 22px;
+    }
+    &--dess{
+        padding-top: 25px ;
+    }
+    &__underligne{
+        width: 40px;
+        height: 2px;
+        background: $colour-tertiary;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+    &__food{
+        @include tag_menu;
+        max-height: 50px;;
+    }    
+}
+.check{
+    @include menu_checked;
+    top: -38px;
+    height: 67px;
+}
+
