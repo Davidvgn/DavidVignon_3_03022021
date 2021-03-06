@@ -36,6 +36,9 @@
             @include hover_active_animation_chosen--big;
         }
 
+        @media (max-width:325px){
+            max-width: 300px;
+        }
 }
 .check--big{
     @include menu_checked;
