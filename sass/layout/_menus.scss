@@ -98,7 +98,11 @@
     }
     &__food{
         @include tag_menu;
-        max-height: 50px;;
+        max-height: 50px;
+        @media (max-width:325px){
+            max-width: 300px;
+        }
+
     }    
 }
 .check{
